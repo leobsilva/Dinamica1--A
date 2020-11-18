@@ -1,4 +1,4 @@
-class dataSaver {
+class DataSaver {
   private int dia;
   private int mes;
   private int ano;
@@ -38,12 +38,12 @@ class dataSaver {
     return this.hora;
   }
 
-  public void setMinuto(int minuto) {
-    this.minuto = minuto;
+  public void setMinutos(int minutos) {
+    this.minutos = minutos;
   }
 
-  public int getMinuto() {
-    return this.minuto;
+  public int getMinutos() {
+    return this.minutos;
   }
 
   public void setAmpm(String ampm) {
@@ -53,8 +53,23 @@ class dataSaver {
   public String getAmpm() {
     return this.ampm;
   }
+
+  public void imprimeData() {
+    System.out.println(this.getDia() + "/" + this.getMes() + "/" + this.getAno());
+    System.out.println(this.getAmpm() + " - " + this.getHora() + " : " + this.getMinutos());
+  }
 }
+
 class Main {
   public static void main(String[] args) {
+    DataSaver newData = new DataSaver();
+
+    newData.setDia(26);
+    newData.setMes(03);
+    newData.setAno(1998);
+    newData.setAmpm("AM");
+    newData.setHora(6);
+    newData.setMinutos(46);
+    newData.imprimeData();
   }
 }
