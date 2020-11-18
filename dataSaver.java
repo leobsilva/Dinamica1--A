@@ -64,12 +64,12 @@ class Main {
   public static void main(String[] args) {
     DataSaver newData = new DataSaver();
 
-    newData.setDia(26);
-    newData.setMes(03);
-    newData.setAno(1998);
+    newData.setDia(1);
+    newData.setMes(04);
+    newData.setAno(2019);
     newData.setAmpm("AM");
-    newData.setHora(6);
-    newData.setMinutos(46);
+    newData.setHora(2);
+    newData.setMinutos(34);
     newData.imprimeData();
   }
 }
